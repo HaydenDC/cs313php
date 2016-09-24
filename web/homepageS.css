@@ -1,0 +1,15 @@
+header
+{
+   background-color: red;
+   height: 150px;
+   width: 100%;
+   color: black;
+   position: fixed;
+   top: 0;
+   left: 0;
+   text-align: center;
+   font-family: "Castellar";
+   border-bottom-style: solid;
+   border-bottom-width: 3px;
+   border-bottom-color: yellow;
+}
