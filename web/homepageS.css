@@ -3,7 +3,7 @@ header
    background-color: red;
    height: 150px;
    width: 100%;
-   color: black;
+   color: white;
    position: fixed;
    top: 0;
    left: 0;
@@ -11,7 +11,6 @@ header
    font-family: "Castellar";
    border-bottom-style: solid;
    border-bottom-width: 3px;
-   border-bottom-color: yellow;
 }
 
 img
@@ -47,5 +46,5 @@ button:hover
   color: red;
   border-color: black;
   border-radius: 10px;
-  font-family: "Castellar";
+  font-family: "Garamond";
 }
