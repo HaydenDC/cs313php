@@ -40,3 +40,9 @@ h1
     transition-duration: 0.4s;
     cursor: pointer;
 }
+
+button:hover
+{
+  background-color: white;
+  color: red;
+}
