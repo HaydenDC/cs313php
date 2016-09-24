@@ -45,4 +45,6 @@ button:hover
 {
   background-color: white;
   color: red;
+  border-color: black;
+  border-radius: 10px;
 }
