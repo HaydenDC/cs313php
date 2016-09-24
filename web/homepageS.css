@@ -13,3 +13,9 @@ header
    border-bottom-width: 3px;
    border-bottom-color: yellow;
 }
+
+img
+{
+  height: 150px;
+  Width: 200px;
+}
