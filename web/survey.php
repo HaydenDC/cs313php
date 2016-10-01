@@ -70,6 +70,7 @@ fwrite($myFile, $yPlay);
 }
 
 //How good is the user?
+$goodStart = "Based on how good you say you are, ";
 $hGood = "you should actually tell us how good you think you are.";
 switch($_POST["howGood"]){
 	case "1":
@@ -112,7 +113,7 @@ switch($_POST["howGood"]){
 	$hGood = "since you aren't a pro, you must be full of yourself. Sorry.";
 	break;
 }
-fwrite($myFile, $hGood);
+fwrite($myFile, $goodStart . $hGood);
 fclose($myFile);
 
 
