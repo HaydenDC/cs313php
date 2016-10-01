@@ -40,7 +40,7 @@ else{
 } 
 fwrite($myFile, $yPlay);
 
-/*How good is the user?
+//How good is the user?
 $hGood = "you should actually tell us how good you think you are."
 switch($_POST["howGood"]){
 	case "1":
@@ -86,7 +86,7 @@ switch($_POST["howGood"]){
 fwrite($myFile, $hGood);
 fclose($myFile);
 
-*/
+
 ?>
 
 <!--Open the file-->
