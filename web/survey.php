@@ -1,6 +1,7 @@
 <html>
 <body>
 
+<h1>This is the results page</h1>
  Hello <?php echo htmlspecialchars($_POST["name"]); ?>!!<br>
 
  
@@ -13,7 +14,7 @@
  
  <?php
   if($_POST["beenToGame"]=="Yes"){
- 	echo "You have been to a game";
+ 	echo "We are glad you have been to a game";
  } 
  else{
  	echo "You really should go to a game..";
@@ -25,7 +26,7 @@
  <?php
  
   if($_POST["havePlayed"]=="Yes"){
-	echo "You have played the sport";
+	echo "We love that you have played the sport";
 }
 else{
 	echo "No? Then how do you know it's your favorite?"; 
