@@ -20,7 +20,7 @@ fwrite($myFile, $favSport);
 $favTeam = htmlspecialchars($_POST["team"]);
 fwrite($myFile, $favTeam);
 
-/*Has the user been to a game?
+//Has the user been to a game?
 $yGame = "You dont know if you have been to a game?";
 if($_POST["beenToGame"]=="Yes"){
  	$yGame = "We are glad you have been to a game";
@@ -30,7 +30,7 @@ if($_POST["beenToGame"]=="Yes"){
  }
  fwrite($myFile, $yGame);
 
- //Does the user play the sport?
+ /*Does the user play the sport?
  $yPlay = "You dont know if you have played the sport?"
 if($_POST["havePlayed"]=="Yes"){
 	$yPlay = "We love that you have played the sport";
