@@ -24,21 +24,29 @@ fwrite($myFile, $favTeam);
 $yGame = "You dont know if you have been to a game?";
 if($_POST["beenToGame"]=="Yes"){
  	$yGame = "We are glad you have been to a game";
+ 	fwrite($myFile, $yGame);
  } 
- else{
+ elseif($_POST["beenToGame"]=="No"){
  	$yGame = "You really should go to a game..";
+ 	fwrite($myFile, $yGame);
  }
+ else{
  fwrite($myFile, $yGame);
+}
 
  //Does the user play the sport?
  $yPlay = "You dont know if you have played the sport?";
 if($_POST["havePlayed"]=="Yes"){
 	$yPlay = "We love that you have played the sport";
+	fwrite($myFile, $yPlay);
 }
-else{
-	$yPlay = "No? Then how do you know it's your favorite?"; 
+elseif($_POST["havePlayed"]=="No"){
+	$yPlay = "No? Then how do you know it's your favorite?";
+	fwrite($myFile, $yPlay); 
 } 
+else{
 fwrite($myFile, $yPlay);
+}
 
 //How good is the user?
 $hGood = "you should actually tell us how good you think you are.";
