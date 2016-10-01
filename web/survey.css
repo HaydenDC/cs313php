@@ -44,11 +44,12 @@ a:link, a:visited
 {
 	background-color: lightblue;
 	color: black;
-	padding: 4px;
+	padding: 3px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	border: 1px solid #1ad1ff;
 	border-radius: 4px;
+	width: 100px;
 }
 
