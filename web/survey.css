@@ -1,11 +1,19 @@
-h1
-{
-	color: blue;
-	
-}
 
 input[type=text]
 {
 	border: 2px solid #1ad1ff;
 	border-radius: 6px;
+}
+
+header
+{
+	background-color: #007399;
+	color: white;
+}
+
+body
+{
+	background-color: #0039e6;
+	color: white;
+
 }
