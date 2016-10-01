@@ -14,13 +14,13 @@ fwrite($myFile, $name);
 
 //Users favorite sport
 $favSport = htmlspecialchars($_POST["sport"]);
-fwrite($myFile, $sport);
+fwrite($myFile, $favSport);
 
-/*Users favorite team
+//Users favorite team
 $favTeam = htmlspecialchars($_POST["team"]);
-fwrite($myFile, $team);
+fwrite($myFile, $favTeam);
 
-//Has the user been to a game?
+/*Has the user been to a game?
 $yGame = "You dont know if you have been to a game?";
 if($_POST["beenToGame"]=="Yes"){
  	$yGame = "We are glad you have been to a game";
