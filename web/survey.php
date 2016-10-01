@@ -121,14 +121,14 @@ fclose($myFile);
 
 <!--Open the file-->
 <?php
-$myFile = fopen("newFile.txt", "r") or die ("Couldn't open the file dude");
-while(!feof($myFile)){
-echo fgets($myFile) . "<br>";
+$theFile = fopen("newFile.txt", "r") or die ("Couldn't open the file dude");
+while(!feof($theFile)){
+	echo fgets($theFile) . "<br>";
 }
 fclose($myFile);
 ?>
 
-<h1>Did the file open</h1>
+<h1>Did the file open?</h1>
  
 
 </body>
