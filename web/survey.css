@@ -1,3 +1,7 @@
+form
+{
+	text-align: center;
+}
 
 input[type=text]
 {
@@ -12,7 +16,7 @@ input[type=text]:focus
 
 input[type=submit]
 {
-	width: 50px;
+	width: 100px;
 	border: 1px solid #1ad1ff;
 	border-radius: 4px;
 	background-color: lightblue;
