@@ -9,7 +9,8 @@
 $myFile = fopen("newFile.txt","w") or die("Unable to open/write file:(");
 
 //Users name
-$name = "mystery person";
+$name = " mystery person";
+
 if(!$_POST["name"]){
 	fwrite($myFile, "Hello" . $name . "!!");
 }
@@ -19,12 +20,26 @@ fwrite($myFile, "Hello " . $name . "!!");
 }
 
 //Users favorite sport
+$favSport = "You dont have a favorite sport?";
+
+if(!$_POST["sport"]){
+	fwrite($myFile, $favSport);
+}
+else{
 $favSport = htmlspecialchars($_POST["sport"]);
 fwrite($myFile, $favSport);
+}
 
 //Users favorite team
+$faveTeam = "You dont have a favorite team?";
+
+if(!$_POST["team"]){
+	fwrite($myFile, $faveTeam);
+}
+else{
 $favTeam = htmlspecialchars($_POST["team"]);
 fwrite($myFile, $favTeam);
+}
 
 //Has the user been to a game?
 $yGame = "You dont know if you have been to a game?";
