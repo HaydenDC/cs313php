@@ -23,7 +23,8 @@
  
 
  <?php
-  if($_POST["havePlayed"])=="Yes"){
+ 
+  if($_POST["havePlayed"]=="Yes"){
 	echo "You have played the sport";
 }
 else{
