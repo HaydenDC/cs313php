@@ -9,8 +9,14 @@
 $myFile = fopen("newFile.txt","w") or die("Unable to open/write file:(");
 
 //Users name
+$name = "mystery person";
+if(!$_POST["name"]){
+	fwrite($myFile, "Hello" . $name . "!!");
+}
+else{
 $name = htmlspecialchars($_POST["name"]);
 fwrite($myFile, "Hello " . $name . "!!");
+}
 
 //Users favorite sport
 $favSport = htmlspecialchars($_POST["sport"]);
