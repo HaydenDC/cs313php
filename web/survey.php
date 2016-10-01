@@ -17,7 +17,7 @@ $myFile = fopen("newFile.txt","w") or die("Unable to open/write file:(");
 $name = " mystery person";
 
 if(!$_POST["name"]){
-	fwrite($myFile, "Hello" . $name . "!!");
+	fwrite($myFile, "Hello" . $name . "!! ");
 }
 else{
 $name = htmlspecialchars($_POST["name"]);
@@ -128,8 +128,7 @@ fclose($myFile);
 <?php
 $theFile = fopen("newFile.txt", "r") or die ("Couldn't open the file dude");
 while(!feof($theFile)){
-	echo fgets($theFile);
-	echo "<br>";
+	echo fgets($theFile) . "<br>";
 }
 fclose($theFile);
 ?>
