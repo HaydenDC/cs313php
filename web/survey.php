@@ -23,20 +23,20 @@
  
 <!-- Have they played the sport?-->
  <?php
-  if($_POST["havePlayed"])=="Yes"){
+  /*if($_POST["havePlayed"])=="Yes"){
 	echo "You have played the sport";
 }
 else{
 	echo "No? Then how do you know it's your favorite?"; 
-}
+}*/
 ?>
 
 
 <!--How good are they? using a switch statement
 Based on how good you are, we think
 <?php
-/*
-switch($_POST["howGood"]){
+
+/*switch($_POST["howGood"]){
 	case "1":
 	echo "YOU SHOULD GET OUT THERE AND PLAY MORE!!";
 	break;
