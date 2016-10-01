@@ -13,15 +13,15 @@ session_start();
  <h1>Tell me about your sports life</h1>
 </header>
  <form action="survey.php" method="post">
- What is your name? <input type="text" name="name"><br>
- What is your favorite sport? <input type="text" name="sport"><br>
- What is your favorite team? <input type="text" name="team"><br>
+ What is your name? <input type="text" name="name"><br><br>
+ What is your favorite sport? <input type="text" name="sport"><br><br>
+ What is your favorite team? <input type="text" name="team"><br><br>
  Have you been to one of their games?
   <input type="radio" name="beenToGame" value="Yes">Yes
-  <input type="radio" name="beenToGame" value="No">No<br>
+  <input type="radio" name="beenToGame" value="No">No<br><br>
   Have you ever played this sport?
   <input type="radio" name="havePlayed" value="Yes">Yes
-  <input type="radio" name="havePlayed" value="No">No<br>
+  <input type="radio" name="havePlayed" value="No">No<br><br>
   How good are you?<br>
   ..Played once<input type="radio" name="howGood" value="1">
   <input type="radio" name="howGood" value="2">2
@@ -32,7 +32,7 @@ session_start();
   <input type="radio" name="howGood" value="7">7
   <input type="radio" name="howGood" value="8">8
   <input type="radio" name="howGood" value="9">9
-  <input type="radio" name="howGood" value="10">Surprised i'm not a pro..<br>
+  <input type="radio" name="howGood" value="10">Surprised i'm not a pro..<br><br>
   <input type="submit" value="Give Info">
   <a href="survey.php">Results page</a>
  </form>
