@@ -32,10 +32,10 @@ else{
 ?>
 
 
-<!--How good are they? using a switch statement-->
+<!--How good are they? using a switch statement
 Based on how good you are, we think
 <?php
-
+/*
 switch($_POST["howGood"]){
 	case "1":
 	echo "YOU SHOULD GET OUT THERE AND PLAY MORE!!";
@@ -76,8 +76,9 @@ switch($_POST["howGood"]){
 	case "10":
 	echo "since you aren't a pro, you must be full of yourself. Sorry.";
 	break;
+	*/
 }
 ?>
-
+-->
 </body>
 </html>
