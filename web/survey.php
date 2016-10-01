@@ -1,4 +1,7 @@
 <html>
+<head>
+	<link rel="stylesheet" type="text/css" href="survey.css">
+</head>
 <body>
 
 <h1>This is the results page</h1>

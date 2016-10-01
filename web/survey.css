@@ -7,6 +7,7 @@ input[type=text]
 {
 	border: 1px solid #1ad1ff;
 	border-radius: 4px;
+	text-align: center;
 }
 
 input[type=text]:focus
@@ -20,8 +21,6 @@ input[type=submit]
 	border: 1px solid #1ad1ff;
 	border-radius: 4px;
 	background-color: lightblue;
-	text-decoration: heavy;
-
 }
 
 header
@@ -49,7 +48,6 @@ a:link, a:visited
 	padding-bottom: 2px;
 	text-align: center;
 	text-decoration:none;
-	text-decoration: heavy;
 	display: inline-block;
 	border: 1px solid #1ad1ff;
 	border-radius: 4px;
