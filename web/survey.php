@@ -27,7 +27,7 @@ if(!$_POST["sport"]){
 }
 else{
 $favSport = htmlspecialchars($_POST["sport"]);
-fwrite($myFile, $favSport);
+fwrite($myFile, "Your favorite sport is:" . $favSport);
 }
 
 //Users favorite team
@@ -38,7 +38,7 @@ if(!$_POST["team"]){
 }
 else{
 $favTeam = htmlspecialchars($_POST["team"]);
-fwrite($myFile, $favTeam);
+fwrite($myFile, "Your favorite team is:" .  $favTeam);
 }
 
 //Has the user been to a game?
