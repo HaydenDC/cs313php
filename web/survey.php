@@ -6,7 +6,7 @@
 <!--Creat the file-->
 <?php
 //Make the file
-$myFile = fopen("newFile.txt","W") or die("Unable to open/write file:(");
+$myFile = fopen("newFile.txt","w") or die("Unable to open/write file:(");
 
 /*Users name
 $name = htmlspecialchars($_POST["name"]);
