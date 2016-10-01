@@ -4,10 +4,10 @@
  Hello <?php echo htmlspecialchars($_POST["name"]); ?>!!
 
  
- Your favorite sport is: <?php echo htmlspecialchars($_POST["sport"]); ?>.
+ Your favorite sport is: <?php echo htmlspecialchars($_POST["sport"]); ?>
 
  
- Your favorite team is: <?php echo htmlspecialchars($_POST["team"]); ?>.	
+ Your favorite team is: <?php echo htmlspecialchars($_POST["team"]); ?>	
 
  
  
