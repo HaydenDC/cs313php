@@ -1,15 +1,16 @@
 <html>
 <body>
-//Name of the user
+<!--Users name-->
  Hello <?php echo htmlspecialchars($_POST["name"]); ?>!!<br>
 
- //Favorite Sport
+ <!--Favorite Sport-->
  Your favorite sport is: <?php echo htmlspecialchars($_POST["sport"]); ?>.<br>
 
- //Favorite Team
+ <!--Favorite Team-->
  Your favorite team is: <?php echo htmlspecialchars($_POST["team"]); ?>.<br>
 
- //Have they been to a game?
+ 
+ <!--Have they been to a game?-->
  <?php
   if($_POST["beenToGame"]=="Yes"){
  	echo "You have been to a game";
@@ -19,7 +20,8 @@
  }
  ?><br>
 
- //Have they played the sport?
+ 
+<!-- Have they played the sport?-->
  <?php
   if($_POST["havePlayed"])=="Yes"){
 	echo "You have played the sport";
@@ -29,7 +31,8 @@ else{
 }
 ?>
 
-//How good are they? using a switch statement
+
+<!--How good are they? using a switch statement-->
 Based on how good you are, we think
 <?php
 
@@ -75,7 +78,6 @@ switch($_POST["howGood"]){
 	break;
 }
 ?>
-
 
 </body>
 </html>
