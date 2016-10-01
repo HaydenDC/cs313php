@@ -10,7 +10,7 @@ $myFile = fopen("newFile.txt","w") or die("Unable to open/write file:(");
 
 //Users name
 $name = htmlspecialchars($_POST["name"]);
-fwrite($myFile, "Hello " + $name + "!!");
+fwrite($myFile, "Hello " . $name . "!!");
 
 //Users favorite sport
 $favSport = htmlspecialchars($_POST["sport"]);
