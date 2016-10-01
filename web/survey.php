@@ -27,7 +27,7 @@ if(!$_POST["sport"]){
 }
 else{
 $favSport = htmlspecialchars($_POST["sport"]);
-fwrite($myFile, "Your favorite sport is:" . $favSport);
+fwrite($myFile, "Your favorite sport is: " . $favSport . ".");
 }
 
 //Users favorite team
@@ -38,13 +38,13 @@ if(!$_POST["team"]){
 }
 else{
 $favTeam = htmlspecialchars($_POST["team"]);
-fwrite($myFile, "Your favorite team is:" .  $favTeam);
+fwrite($myFile, "Your favorite team is: " .  $favTeam . ".");
 }
 
 //Has the user been to a game?
 $yGame = "You dont know if you have been to a game?";
 if($_POST["beenToGame"]=="Yes"){
- 	$yGame = "We are glad you have been to a" . $favTeam . " game";
+ 	$yGame = "We are glad you have been to a " . $favTeam . " game!";
  	fwrite($myFile, $yGame);
  } 
  elseif($_POST["beenToGame"]=="No"){
@@ -58,7 +58,7 @@ if($_POST["beenToGame"]=="Yes"){
  //Does the user play the sport?
  $yPlay = "You dont know if you have played the sport?";
 if($_POST["havePlayed"]=="Yes"){
-	$yPlay = "We love that you have played the sport";
+	$yPlay = "We love that you have played the sport.";
 	fwrite($myFile, $yPlay);
 }
 elseif($_POST["havePlayed"]=="No"){
@@ -90,7 +90,7 @@ switch($_POST["howGood"]){
 	break;
 
 	case "5":
-	$hGood = "you are mediocre";
+	$hGood = "you are mediocre.";
 	break;
 
 	case "6":
@@ -110,7 +110,7 @@ switch($_POST["howGood"]){
 	break;
 
 	case "10":
-	$hGood = "since you aren't a pro, you must be full of yourself. Sorry.";
+	$hGood = " and since you aren't a pro, you must be full of yourself. Sorry.";
 	break;
 }
 fwrite($myFile, $goodStart . $hGood);
