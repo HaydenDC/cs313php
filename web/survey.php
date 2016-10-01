@@ -7,6 +7,7 @@
 <header>
  <h1>This is the results page</h1>
 </header>
+
 <!--Creat the file-->
 <?php
 //Make the file
