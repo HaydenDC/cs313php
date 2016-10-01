@@ -44,7 +44,7 @@ fwrite($myFile, "Your favorite team is:" .  $favTeam);
 //Has the user been to a game?
 $yGame = "You dont know if you have been to a game?";
 if($_POST["beenToGame"]=="Yes"){
- 	$yGame = "We are glad you have been to a game";
+ 	$yGame = "We are glad you have been to a" . $favTeam . " game";
  	fwrite($myFile, $yGame);
  } 
  elseif($_POST["beenToGame"]=="No"){
