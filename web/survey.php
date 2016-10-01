@@ -22,6 +22,17 @@
 
  
 
+ <?php
+  if($_POST["havePlayed"])=="Yes"){
+	echo "You have played the sport";
+}
+else{
+	echo "No? Then how do you know it's your favorite?"; 
+}
+?>
+
+
+
 
 </body>
 </html>
