@@ -31,7 +31,7 @@ if($_POST["beenToGame"]=="Yes"){
  fwrite($myFile, $yGame);
 
  //Does the user play the sport?
- $yPlay = "You dont know if you have played the sport?"
+ $yPlay = "You dont know if you have played the sport?";
 if($_POST["havePlayed"]=="Yes"){
 	$yPlay = "We love that you have played the sport";
 }
