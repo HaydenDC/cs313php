@@ -20,7 +20,7 @@ input[type=submit]
 	border: 1px solid #1ad1ff;
 	border-radius: 4px;
 	background-color: lightblue;
-	text text-decoration: bold;
+	text-decoration: bold;
 
 }
 
@@ -48,6 +48,7 @@ a:link, a:visited
 	padding-top: 2px;
 	padding-bottom: 2px;
 	text-align: center;
+	text-decoration:none;
 	text-decoration: bold;
 	display: inline-block;
 	border: 1px solid #1ad1ff;
