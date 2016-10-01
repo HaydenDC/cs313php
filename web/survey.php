@@ -17,43 +17,43 @@ $myFile = fopen("newFile.txt","w") or die("Unable to open/write file:(");
 $name = " mystery person";
 
 if(!$_POST["name"]){
-	file_put_contents($myFile, "Hello" . $name . "!!");
+	fwrite($myFile, "Hello" . $name . "!!");
 }
 else{
 $name = htmlspecialchars($_POST["name"]);
-fwrite($myFile, "Hello " . $name . "!!");
+fwrite($myFile, "Hello " . $name . "!! ");
 }
 
 //Users favorite sport
-$favSport = "You dont have a favorite sport?";
+$favSport = "You dont have a favorite sport? ";
 
 if(!$_POST["sport"]){
 	fwrite($myFile, $favSport);
 }
 else{
 $favSport = htmlspecialchars($_POST["sport"]);
-fwrite($myFile, "Your favorite sport is: " . $favSport . ".");
+fwrite($myFile, "Your favorite sport is: " . $favSport . ". ");
 }
 
 //Users favorite team
-$faveTeam = "You dont have a favorite team?";
+$faveTeam = "You dont have a favorite team? ";
 
 if(!$_POST["team"]){
 	fwrite($myFile, $faveTeam);
 }
 else{
 $favTeam = htmlspecialchars($_POST["team"]);
-fwrite($myFile, "Your favorite team is: " .  $favTeam . ".");
+fwrite($myFile, "Your favorite team is: " .  $favTeam . ". ");
 }
 
 //Has the user been to a game?
-$yGame = "You dont know if you have been to a game?";
+$yGame = "You dont know if you have been to a game? ";
 if($_POST["beenToGame"]=="Yes"){
- 	$yGame = "We are glad you have been to a " . $favTeam . " game!";
+ 	$yGame = "We are glad you have been to a " . $favTeam . " game! ";
  	fwrite($myFile, $yGame);
  } 
  elseif($_POST["beenToGame"]=="No"){
- 	$yGame = "You really should go to a game..";
+ 	$yGame = "You really should go to a game.. ";
  	fwrite($myFile, $yGame);
  }
  else{
@@ -61,13 +61,13 @@ if($_POST["beenToGame"]=="Yes"){
 }
 
  //Does the user play the sport?
- $yPlay = "You dont know if you have played the sport?";
+ $yPlay = "You dont know if you have played the sport? ";
 if($_POST["havePlayed"]=="Yes"){
-	$yPlay = "We love that you have played the sport.";
+	$yPlay = "We love that you have played the sport. ";
 	fwrite($myFile, $yPlay);
 }
 elseif($_POST["havePlayed"]=="No"){
-	$yPlay = "No? Then how do you know it's your favorite?";
+	$yPlay = "No? Then how do you know it's your favorite? ";
 	fwrite($myFile, $yPlay); 
 } 
 else{
