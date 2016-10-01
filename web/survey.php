@@ -8,11 +8,11 @@
 //Make the file
 $myFile = fopen("newFile.txt","w") or die("Unable to open/write file:(");
 
-/*Users name
+//Users name
 $name = htmlspecialchars($_POST["name"]);
 fwrite($myFile, $name);
 
-//Users favorite sport
+/*Users favorite sport
 $favSport = htmlspecialchars($_POST["sport"]);
 fwrite($myFile, $sport);
 
