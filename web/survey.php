@@ -30,7 +30,7 @@ if($_POST["beenToGame"]=="Yes"){
  }
  fwrite($myFile, $yGame);
 
- /*Does the user play the sport?
+ //Does the user play the sport?
  $yPlay = "You dont know if you have played the sport?"
 if($_POST["havePlayed"]=="Yes"){
 	$yPlay = "We love that you have played the sport";
@@ -40,7 +40,7 @@ else{
 } 
 fwrite($myFile, $yPlay);
 
-//How good is the user?
+/*How good is the user?
 $hGood = "you should actually tell us how good you think you are."
 switch($_POST["howGood"]){
 	case "1":
