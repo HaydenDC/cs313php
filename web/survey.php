@@ -50,11 +50,11 @@ switch($_POST["howGood"]){
 	echo "good for you.";
 	break;
 
-	case "5"
+	case "5":
 	echo "you are mediocre";
 	break;
 
-	case "6"
+	case "6":
 	echo "you are not too bad, but could still use some work.";
 	break;
 
