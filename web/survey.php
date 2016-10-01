@@ -29,7 +29,7 @@ else{
 }
 ?>
 
-//How good are they? (using a switch statement)
+//How good are they? using a switch statement
 Based on how good you are, we think
 <?php
 
