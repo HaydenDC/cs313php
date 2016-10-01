@@ -12,11 +12,11 @@ $myFile = fopen("newFile.txt","w") or die("Unable to open/write file:(");
 $name = htmlspecialchars($_POST["name"]);
 fwrite($myFile, $name);
 
-/*Users favorite sport
+//Users favorite sport
 $favSport = htmlspecialchars($_POST["sport"]);
 fwrite($myFile, $sport);
 
-//Users favorite team
+/*Users favorite team
 $favTeam = htmlspecialchars($_POST["team"]);
 fwrite($myFile, $team);
 
