@@ -66,7 +66,7 @@ elseif($_POST["havePlayed"]=="No"){
 	fwrite($myFile, $yPlay); 
 } 
 else{
-fwrite($myFile, $yPlay);
+fwrite($myFile, $yPlay . "<br>");
 }
 
 //How good is the user?
@@ -125,7 +125,7 @@ $theFile = fopen("newFile.txt", "r") or die ("Couldn't open the file dude");
 while(!feof($theFile)){
 	echo fgets($theFile) . "<br>";
 }
-fclose($myFile);
+fclose($theFile);
 ?>
 
 <h1>Did the file open?</h1>
