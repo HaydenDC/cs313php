@@ -1,13 +1,13 @@
 <html>
 <body>
 
- Hello <?php echo htmlspecialchars($_POST["name"]); ?>!!
+ Hello <?php echo htmlspecialchars($_POST["name"]); ?>!!<br>
 
  
- Your favorite sport is: <?php echo htmlspecialchars($_POST["sport"]); ?>
+ Your favorite sport is: <?php echo htmlspecialchars($_POST["sport"]); ?>.<br>
 
  
- Your favorite team is: <?php echo htmlspecialchars($_POST["team"]); ?>	
+ Your favorite team is: <?php echo htmlspecialchars($_POST["team"]); ?>.<br>
 
  
  
@@ -30,7 +30,7 @@
 else{
 	echo "No? Then how do you know it's your favorite?"; 
 }
-?>
+?><br>
 
 Based on how good you are, we think
 <?php
@@ -77,7 +77,7 @@ switch($_POST["howGood"]){
 	break;
 	
 }
-?>
+?><br>
 
 
 </body>
