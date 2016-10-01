@@ -128,7 +128,8 @@ fclose($myFile);
 <?php
 $theFile = fopen("newFile.txt", "r") or die ("Couldn't open the file dude");
 while(!feof($theFile)){
-	echo fgets($theFile) . "<br>";
+	echo fgets($theFile);
+	echo "<br>";
 }
 fclose($theFile);
 ?>
