@@ -1,13 +1,13 @@
 <html>
 <body>
 <!--Users name-->
- Hello <?php echo htmlspecialchars($_POST["name"]); ?>!!<br>
+ Hello <?php echo htmlspecialchars($_POST["name"]); ?>!!
 
  <!--Favorite Sport-->
- Your favorite sport is: <?php echo htmlspecialchars($_POST["sport"]); ?>.<br>
+ Your favorite sport is: <?php echo htmlspecialchars($_POST["sport"]); ?>.
 
  <!--Favorite Team-->
- Your favorite team is: <?php echo htmlspecialchars($_POST["team"]); ?>.<br>
+ Your favorite team is: <?php echo htmlspecialchars($_POST["team"]); ?>.
 
  
  <!--Have they been to a game?-->
