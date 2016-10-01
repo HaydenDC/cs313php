@@ -8,7 +8,7 @@
 //Make the file
 $myFile = fopen("newFile.txt","W") or die("Unable to open/write file:(");
 
-//Users name
+/*Users name
 $name = htmlspecialchars($_POST["name"]);
 fwrite($myFile, $name);
 
@@ -86,7 +86,7 @@ switch($_POST["howGood"]){
 fwrite($myFile, $hGood);
 fclose($myFile);
 
-
+*/
 ?>
 
 <!--Open the file-->
