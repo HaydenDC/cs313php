@@ -10,7 +10,7 @@ $myFile = fopen("newFile.txt","w") or die("Unable to open/write file:(");
 
 //Users name
 $name = htmlspecialchars($_POST["name"]);
-fwrite($myFile, $name);
+fwrite($myFile, "Hello " + $name + "!!");
 
 //Users favorite sport
 $favSport = htmlspecialchars($_POST["sport"]);
@@ -92,7 +92,7 @@ fclose($myFile);
 <!--Open the file-->
 <?php
 $myFile = fopen("newFile.txt", "r") or die ("Couldn't open the file dude");
-echo fread($myFile, filesize("newFile.txt"));
+echo fgets($myFile);
 fclose($myFile);
 ?>
 
