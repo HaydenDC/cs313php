@@ -4,8 +4,9 @@
 </head>
 <body>
 
-<h1>This is the results page</h1>
-
+<header>
+ <h1>This is the results page</h1>
+</header>
 <!--Creat the file-->
 <?php
 //Make the file
@@ -130,9 +131,6 @@ while(!feof($theFile)){
 }
 fclose($theFile);
 ?>
-
-<h1>Did the file open?</h1>
- 
 
 </body>
 </html>
