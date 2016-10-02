@@ -14,8 +14,7 @@ header
 {
 	width: 100%;
 	height: 90px;
-	position: fixed;
-	top: 0;
+	position: static;
 	text-align: center;
 	background-color: red;
 	border-bottom: 2px solid grey;
