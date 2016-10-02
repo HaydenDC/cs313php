@@ -22,12 +22,12 @@ header
 #navBar
 {
 	width:100%;
-	height: 45px;
+	height: 40px;
 	position: fixed;
 	top: 92px;
 	border-bottom: 2px solid black;
 	text-align: center;
-	padding-top: 15px;
+	padding-top: 20px;
 	background-color: black;
 }
 
