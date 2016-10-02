@@ -28,6 +28,7 @@ navBar
 a:link, a:visited
 {
 	border: 2px solid #ff6666;
+	background-color: red;
 	color: white;
 	text-align: center;
 	text-decoration: none;
