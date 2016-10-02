@@ -16,7 +16,7 @@ header
 	height: 90px;
 	text-align: center;
 	background-color: red;
-	border-bottom: 2px solid #ff6666;
+	border-bottom: 2px solid grey;
 }
 
 #navBar
@@ -38,7 +38,7 @@ header
 	height: 100%;
 	position: fixed;
 	top: 128px;
-	border-top: 2px solid #ff6666;
+	border-top: 2px solid grey;
 	padding-top: 0;
 }
 
