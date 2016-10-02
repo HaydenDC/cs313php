@@ -67,7 +67,7 @@ button
 	padding: 4px 7px;
 }
 
-button:hover, button:active
+button:hover
 {
 	background-color: black;
 }
