@@ -19,7 +19,7 @@ header
 	border-bottom: 2px solid black;
 }
 
-navBar
+#navBar
 {
 	width:100%;
 	position: fixed;
