@@ -17,12 +17,15 @@ header
 	text-align: center;
 	background-color: red;
 	border-bottom: 2px solid black;
-	border-radius: 3px;
 }
 
 navBar
 {
 	width:100%;
+	position: fixed;
+	top:94px;
+	border-bottom: 2px solid black;
+	text-align: center;
 }
 
 a:link, a:visited
