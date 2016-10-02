@@ -39,6 +39,7 @@ header
 	position: fixed;
 	top: 128px;
 	border-top: 2px solid #ff6666;
+	padding-top: 0;
 }
 
 a:link, a:visited
@@ -71,4 +72,5 @@ button
 button:hover
 {
 	background-color: black;
+	border-color: grey;
 }
