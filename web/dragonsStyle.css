@@ -37,6 +37,7 @@ header
 	height: 100%;
 	position: fixed;
 	top: 132px;
+	border-top: 2px solid #ff6666;
 }
 
 a:link, a:visited
