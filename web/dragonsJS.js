@@ -18,6 +18,6 @@ function loadLogIn() {
      document.getElementById("content").innerHTML = xhttp.responseText;
     }
   };
-  xhttp.open("GET", "https://soundersfc.com", true);
+  xhttp.open("GET", "https://yahoo.com", true);
   xhttp.send();
 }
