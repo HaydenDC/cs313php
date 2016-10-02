@@ -6,6 +6,6 @@ function loadDoc() {
      document.getElementById("content").innerHTML = xhttp.responseText;
     }
   };
-  xhttp.open("GET", "C:\Users\Hayden\php-getting-started\webdragonsHP.html", true);
+  xhttp.open("GET", "https://morning-basin-25235.herokuapp.com/dragonsHP.html", true);
   xhttp.send();
 }
