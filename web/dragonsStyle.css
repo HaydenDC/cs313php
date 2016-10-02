@@ -55,3 +55,18 @@ a:hover, a:active
 {
 	background-color: black;
 }
+
+button
+{
+    border: 2px solid #ff6666;
+	background-color: red;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 4px 7px;
+}
+
+button:hover, button:active
+{
+	background-color: black;
+}
