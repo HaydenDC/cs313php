@@ -56,7 +56,7 @@ a:hover, a:active
 	background-color: black;
 }
 
-.button1
+button
 {
     cursor: pointer;
     border: 2px solid #ff6666;
