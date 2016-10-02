@@ -40,3 +40,8 @@ a:link, a:visited
 	padding: 8px 15px;
 
 }
+
+a:active
+{
+	background-color: black;
+}
