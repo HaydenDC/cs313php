@@ -4,3 +4,15 @@ h1
 	font-family: "Castellar";
 	letter-spacing: 5px;
 }
+
+header
+{
+	background-color: red;
+	border-bottom: 2px solid black;
+	border-radius: 3px;
+}
+
+navBar
+{
+	width:100%;
+}
