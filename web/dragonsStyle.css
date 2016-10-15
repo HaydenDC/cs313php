@@ -49,6 +49,7 @@ header
 	height: 100%;
 	position:fixed;
 	top: 130px;
+	border-top: 2px solid blue;
 }
 
 a:link, a:visited

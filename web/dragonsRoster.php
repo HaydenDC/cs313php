@@ -8,8 +8,6 @@
  </header>
  <h1>This is the top</h1><br>
  <h1>This is after the top</h1><br>
- <h1>This is 2 after the top</h1><br>
- <h1>This is 3 after the top</h1><br>
  <h1>Does this work</h1><br>
  <h1>Did this one show up?</h1><br>
  <?php
