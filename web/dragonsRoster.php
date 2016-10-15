@@ -6,16 +6,13 @@
  <header>
   <h1>This is the Roster page</h1>
  </header>
- <h1>This is the top</h1><br>
- <h1>This is after the top</h1><br>
- <h1>Does this work</h1><br>
- <h1>Did this one show up?</h1><br>
+ 
  <?php
 
 	echo '<h1>php is working</h1>';
 
 // default Heroku Postgres configuration URL
-$dbUrl = getenv('DATABASE_URL');
+$dbUrl = getenv('HEROKU_POSTGRESQL_COPPER_URL');
 
 if (empty($dbUrl)) {
  // example localhost configuration URL with postgres username and a database called cs313db
