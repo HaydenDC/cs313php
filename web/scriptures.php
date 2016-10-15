@@ -15,6 +15,7 @@ if (empty($dbUrl)) {
 
 $dbopts = parse_url($dbUrl);
 
+	echo '<h1>php is working</h1>';
 
 $dbHost = $dbopts["host"]; 
 $dbPort = $dbopts["port"]; 
