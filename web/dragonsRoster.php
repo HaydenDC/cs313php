@@ -8,6 +8,8 @@
  </header>
  <?php
 
+	echo '<h1>php is working</h1>';
+	
 // default Heroku Postgres configuration URL
 $dbUrl = getenv('DATABASE_URL');
 
