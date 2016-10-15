@@ -2,7 +2,7 @@
 DROP TABLE dragons_master;
 CREATE TABLE dragons_master(
 	id	 SERIAL	 PRIMARY KEY,
-	dragons_roster_id	 INT	 NOT NULL,
+	dragons_roster_id	 INT	 REFERENCES dragons_roster(id) NOT NULL,
 	dragons_alumni_id	 INT	 NOT NULL);
 
 --Dragons Roster Table
@@ -46,7 +46,7 @@ CREATE TABLE contact_info(
 
 ------------INSERT INTO TABLES-------------
 -----INSERT INTO PLAYERS-----
-----INSERT HAYDEN----
+----INSERT DANE----
 INSERT INTO player(name, pNumber, position, yrsPlayed, homeTown, homeState, major)
 VALUES ('Dane', 10, 'Outside Defender', 4, 'Boise', 'ID', 'Something Bad Ass');
 
@@ -55,6 +55,7 @@ INSERT INTO player(name, pNumber, position, yrsPlayed, homeTown, homeState, majo
 VALUES ('Scott Staples', 14, 'Center Midfielder', 4, 'Bellevue', 'WA', 'Construction Management');
 
 -----INSERT INTO ALUMNI-----
+----INSERT HAYDEN----
 INSERT INTO alumni(name, position, numYrsPlayed, actYearPlayed)
 VALUES ('Hayden Carlson', 'Outside Defender', 1, '2015-2016');
 
