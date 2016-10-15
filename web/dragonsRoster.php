@@ -6,7 +6,10 @@
  <header>
   <h1>This is the Roster page</h1>
  </header>
-
+ <h1>This is the top</h1><br>
+ <h1>This is after the top</h1><br>
+ <h1>Does this work</h1><br>
+ <h1>Did this one show up?</h1><br>
  <?php
 
 	echo '<h1>php is working</h1>';
@@ -16,7 +19,7 @@ $dbUrl = getenv('DATABASE_URL');
 
 if (empty($dbUrl)) {
  // example localhost configuration URL with postgres username and a database called cs313db
- $dbUrl = "postgres://vfoofmmwyfnovi:bUTWifZtz-HylVrstiWbwmyw2@ec2-50-19-223-15.compute-1.amazonaws.com:5432:ddhp07mnmq0kf3";
+ $dbUrl = "postgres://postgres:bUTWifZtz-HylVrstiWbwmyw2@ec2-50-19-223-15.compute-1.amazonaws.com:5432:ddhp07mnmq0kf3";
 }
 
 $dbopts = parse_url($dbUrl);

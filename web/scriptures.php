@@ -10,12 +10,11 @@ $dbUrl = getenv('DATABASE_URL');
 
 if (empty($dbUrl)) {
  // example localhost configuration URL with postgres username and a database called cs313db
- $dbUrl = "postgres://vfoofmmwyfnovi:bUTWifZtz-HylVrstiWbwmyw2@ec2-50-19-223-15.compute-1.amazonaws.com:5432:ddhp07mnmq0kf3";
+ $dbUrl = "postgres://postgres:password@localhost:5432/cs313db";
 }
 
 $dbopts = parse_url($dbUrl);
 
-	echo '<h1>php is working</h1>';
 
 $dbHost = $dbopts["host"]; 
 $dbPort = $dbopts["port"]; 
