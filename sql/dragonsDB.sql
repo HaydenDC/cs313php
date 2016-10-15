@@ -58,3 +58,4 @@ VALUES ('Scott Staples', 14, 'Center Midfielder', 4, 'Bellevue', 'WA', 'Construc
 INSERT INTO alumni(name, position, numYrsPlayed, actYearPlayed)
 VALUES ('Hayden Carlson', 'Outside Defender', 1, '2015-2016');
 
+
