@@ -1,0 +1,117 @@
+mysql> show tables;
++----------------------------+
+| Tables_in_conference_notes |
++----------------------------+
+| conferences                |
+| notes                      |
+| speakers                   |
+| users                      |
++----------------------------+
+4 rows in set (0.00 sec)
+
+mysql> describe conferences;
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| conferenceID | int(11)     | NO   | PRI | NULL    | auto_increment |
+| month        | varchar(20) | YES  |     | NULL    |                |
+| year         | int(11)     | YES  |     | NULL    |                |
++--------------+-------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+mysql> describe notes;
++--------------+--------------+------+-----+---------+----------------+
+| Field        | Type         | Null | Key | Default | Extra          |
++--------------+--------------+------+-----+---------+----------------+
+| noteID       | int(11)      | NO   | PRI | NULL    | auto_increment |
+| userID       | int(11)      | YES  | MUL | NULL    |                |
+| noteTitle    | varchar(50)  | YES  |     | NULL    |                |
+| noteText     | varchar(512) | YES  |     | NULL    |                |
+| speakerID    | int(11)      | YES  | MUL | NULL    |                |
+| talkTitle    | varchar(50)  | YES  |     | NULL    |                |
+| conferenceID | int(11)      | YES  | MUL | NULL    |                |
+| dateRecorded | date         | YES  |     | NULL    |                |
++--------------+--------------+------+-----+---------+----------------+
+8 rows in set (0.01 sec)
+
+mysql> describe speakers;
++------------+-------------+------+-----+---------+----------------+
+| Field      | Type        | Null | Key | Default | Extra          |
++------------+-------------+------+-----+---------+----------------+
+| speakerID  | int(11)     | NO   | PRI | NULL    | auto_increment |
+| firstName  | varchar(20) | YES  |     | NULL    |                |
+| middleName | varchar(20) | YES  |     | NULL    |                |
+| lastName   | varchar(20) | YES  |     | NULL    |                |
++------------+-------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> describe users;
++-----------+-------------+------+-----+---------+----------------+
+| Field     | Type        | Null | Key | Default | Extra          |
++-----------+-------------+------+-----+---------+----------------+
+| userID    | int(11)     | NO   | PRI | NULL    | auto_increment |
+| firstName | varchar(20) | YES  |     | NULL    |                |
+| lastName  | varchar(20) | YES  |     | NULL    |                |
++-----------+-------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+mysql> show create table conferences;
++-------------+------------------------------------------
+| Table       | Create Table							|
++-------------+------------------------------------------
+| conferences | CREATE TABLE `conferences` (
+  `conferenceID` int(11) NOT NULL AUTO_INCREMENT,
+  `month` varchar(20) DEFAULT NULL,
+  `year` int(11) DEFAULT NULL,
+  PRIMARY KEY (`conferenceID`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 |
++-------------+------------------------------------------
+1 row in set (0.00 sec)
+
+mysql> show create table notes;
++-------+------------------------------------------------
+| Table | Create Table									|
++-------+------------------------------------------------
+| notes | CREATE TABLE `notes` (
+  `noteID` int(11) NOT NULL AUTO_INCREMENT,
+  `userID` int(11) DEFAULT NULL,
+  `noteTitle` varchar(50) DEFAULT NULL,
+  `noteText` varchar(512) DEFAULT NULL,
+  `speakerID` int(11) DEFAULT NULL,
+  `talkTitle` varchar(50) DEFAULT NULL,
+  `conferenceID` int(11) DEFAULT NULL,
+  `dateRecorded` date DEFAULT NULL,
+  PRIMARY KEY (`noteID`),
+  KEY `userID` (`userID`),
+  KEY `speakerID` (`speakerID`),
+  KEY `conferenceID` (`conferenceID`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 |
++-------+------------------------------------------------
+1 row in set (0.00 sec)
+
+mysql> show create table speakers;
++----------+---------------------------------------------
+| Table    | Create Table								|
++----------+---------------------------------------------
+| speakers | CREATE TABLE `speakers` (
+  `speakerID` int(11) NOT NULL AUTO_INCREMENT,
+  `firstName` varchar(20) DEFAULT NULL,
+  `middleName` varchar(20) DEFAULT NULL,
+  `lastName` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`speakerID`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 |
++----------+---------------------------------------------
+1 row in set (0.00 sec)
+
+mysql> show create table users;
++-------+------------------------------------------------
+| Table | Create Table									|
++-------+------------------------------------------------
+| users | CREATE TABLE `users` (
+  `userID` int(11) NOT NULL AUTO_INCREMENT,
+  `firstName` varchar(20) DEFAULT NULL,
+  `lastName` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`userID`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 |
++-------+------------------------------------------------
+1 row in set (0.00 sec)

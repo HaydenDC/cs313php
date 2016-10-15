@@ -1,0 +1,62 @@
+notes=# \d
+           List of relations
+ Schema |    Name    | Type  |  Owner
+--------+------------+-------+----------
+ public | conference | table | postgres
+ public | note       | table | postgres
+ public | person     | table | postgres
+ public | speaker    | table | postgres
+(4 rows)
+
+notes=# \d person
+    Table "public.person"
+ Column |  Type   | Modifiers
+--------+---------+-----------
+ id     | integer | not null
+ name   | text    | not null
+Indexes:
+    "person_pkey" PRIMARY KEY, btree (id)
+Referenced by:
+    TABLE "note" CONSTRAINT "note_person_id_fkey" FOREIGN KEY (person_id) REFERENCES person(id)
+
+
+notes=# \d speaker
+    Table "public.speaker"
+ Column |  Type   | Modifiers
+--------+---------+-----------
+ id     | integer | not null
+ nme    | text    | not null
+Indexes:
+    "speaker_pkey" PRIMARY KEY, btree (id)
+Referenced by:
+    TABLE "note" CONSTRAINT "note_speaker_id_fkey" FOREIGN KEY (speaker_id) REFERENCES speaker(id)
+
+
+notes=# \d conference
+  Table "public.conference"
+ Column |  Type   | Modifiers
+--------+---------+-----------
+ id     | integer | not null
+ month  | text    | not null
+ year   | text    | not null
+Indexes:
+    "conference_pkey" PRIMARY KEY, btree (id)
+Referenced by:
+    TABLE "note" CONSTRAINT "note_conference_id_fkey" FOREIGN KEY (conference_id) REFERENCES conference(id)
+
+
+notes=# \d note
+         Table "public.note"
+    Column     |  Type   | Modifiers
+---------------+---------+-----------
+ id            | integer | not null
+ text          | text    | not null
+ person_id     | integer | not null
+ speaker_id    | integer | not null
+ conference_id | integer | not null
+Indexes:
+    "note_pkey" PRIMARY KEY, btree (id)
+Foreign-key constraints:
+    "note_conference_id_fkey" FOREIGN KEY (conference_id) REFERENCES conference(id)
+    "note_person_id_fkey" FOREIGN KEY (person_id) REFERENCES person(id)
+    "note_speaker_id_fkey" FOREIGN KEY (speaker_id) REFERENCES speaker(id)
