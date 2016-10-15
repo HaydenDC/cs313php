@@ -15,12 +15,8 @@
 	echo '<h1>php is working</h1>';
 	echo '<h1>php is working</h1>';
 	echo '<h1>php is working</h1>';
-	echo '<h1>php is working</h1>';
-	echo '<h1>php is working</h1>';
-	echo '<h1>php is working</h1>';
-	echo '<h1>php is working</h1>';
-	echo '<h1>php is working</h1>';
-	echo '<h1>php is working</h1>';
+	echo '<h1>php is working2</h1>';
+
 
 // default Heroku Postgres configuration URL
 $dbUrl = getenv('HEROKU_POSTGRESQL_COPPER_URL');
