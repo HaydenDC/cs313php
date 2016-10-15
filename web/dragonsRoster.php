@@ -6,10 +6,11 @@
  <header>
   <h1>This is the Roster page</h1>
  </header>
+ <h1>Does this work</h1>
  <?php
 
 	echo '<h1>php is working</h1>';
-	
+
 // default Heroku Postgres configuration URL
 $dbUrl = getenv('DATABASE_URL');
 
