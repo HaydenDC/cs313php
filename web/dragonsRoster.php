@@ -19,7 +19,7 @@
 
 
 // default Heroku Postgres configuration URL
-$dbUrl = getenv('HEROKU_POSTGRESQL_COPPER_URL');
+$dbUrl = getenv('DATABASE_URL');
 
 if (empty($dbUrl)) {
  // example localhost configuration URL with postgres username and a database called cs313db
