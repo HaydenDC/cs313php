@@ -30,7 +30,7 @@ function loadRoster() {
      document.getElementById("content").innerHTML = xhttp.responseText;
     }
   };
-  xhttp.open("GET", "https://morning-basin-25235.herokuapp.com/dragonsRoster.html", true);
+  xhttp.open("GET", "https://morning-basin-25235.herokuapp.com/dragonsRoster.php", true);
   xhttp.send();
 }
 
