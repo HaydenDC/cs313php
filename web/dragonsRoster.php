@@ -18,11 +18,11 @@
 	echo '<h1>php is working2</h1>';
 
 
-// default Heroku Postgres configuration URL
+//Database URL
 $dbUrl = getenv('DATABASE_URL');
 
 if (empty($dbUrl)) {
- // example localhost configuration URL with postgres username and a database called cs313db
+ //Connect to the Database
  $dbUrl = "postgres://postgres:password@localhost:5432/dragonsdb";
 }
 
@@ -39,7 +39,7 @@ try {
  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
 
-	foreach($db->query('SELECT * FROM player')as $row)
+	foreach($db->query('SELECT name, pNumber, position, yrsPlayed, homeTown, homeState, homeCountry, major FROM player')as $row)
 	{
 		echo '<p>';
 		echo '<strong>' . $row['name'] . '' . $row['pNumber'] . '';
