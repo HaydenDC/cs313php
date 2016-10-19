@@ -12,14 +12,11 @@
 	echo '<h1>php is working</h1>';
 	echo '<h1>php is working</h1>';
 	echo '<h1>php is working</h1>';
-	echo '<h1>php is working</h1>';
-	echo '<h1>php is working</h1>';
-	echo '<h1>php is working</h1>';
-	echo '<h1>php is working2</h1>';
+	
 
 
 //Database URL
-$dbUrl = getenv('DATABASE_URL');
+$dbUrl = getenv('HEROKU_POSTGRES_COPPER_URL');
 
 if (empty($dbUrl)) {
  //Connect to the Database
