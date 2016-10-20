@@ -48,7 +48,7 @@ CREATE TABLE contact_info(
 -----INSERT INTO PLAYERS-----
 ----INSERT DANE----
 INSERT INTO player(name, pNumber, position, yrsPlayed, homeTown, homeState, major)
-VALUES ('Dane', 10, 'Outside Defender', 4, 'Boise', 'ID', 'Something Bad Ass');
+VALUES ('Dane', 10, 'Outside Defender', 4, 'Boise', 'ID', 'Something Awesome');
 
 ----INSERT SCOTT----
 INSERT INTO player(name, pNumber, position, yrsPlayed, homeTown, homeState, major)

@@ -7,6 +7,8 @@
   <h1>This is the Roster page</h1>
  </header>
  
+
+ <div id="innerContent">
  <?php
 
 //Database URL
@@ -46,5 +48,6 @@ catch (PDOException $ex) {
 }
 
 ?>
+</div>
 </body>
 </html>
