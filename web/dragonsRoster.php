@@ -9,12 +9,6 @@
  
  <?php
 
-	echo '<h1>php is working</h1>';
-	echo '<h1>php is working</h1>';
-	echo '<h1>php is working</h1>';
-	
-
-
 //Database URL
 $dbUrl = getenv('DATABASE_URL');
 
