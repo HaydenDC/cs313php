@@ -16,7 +16,7 @@
 
 
 //Database URL
-$dbUrl = getenv('HEROKU_POSTGRES_SILVER_URL');
+$dbUrl = getenv('DATABASE_URL');
 
 if (empty($dbUrl)) {
  //Connect to the Database
