@@ -49,7 +49,7 @@ try {
     VALUES ($name, $jNum, $Pos, $yrsPlayed, $hTown, $hState, $hCountry, $major)";
 
     // use exec() because no results are returned
-    $conn->exec($sql);
+    $conn->exec($dbUrl, $sql);
     $newId = $conn->lastInsertId();
     echo "New record created successfully";
     }
