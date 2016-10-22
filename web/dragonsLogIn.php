@@ -11,6 +11,7 @@
   </header>
 <div id="innerContent">
 <a href="https://morning-basin-25235.herokuapp.com/dragonsHome.html">Back to home page</a>
+
  <?php
 
 //Database URL
