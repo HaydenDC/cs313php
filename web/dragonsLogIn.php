@@ -13,6 +13,15 @@
 <a href="https://morning-basin-25235.herokuapp.com/dragonsHome.html">Back to home page</a>
 
  <?php
+$name = htmlspecialchars($_POST["name"]);
+$jNum = htmlspecialchars($_POST["jNum"]);
+$Pos = htmlspecialchars($_POST["Pos"]);
+$yrsPlayed = htmlspecialchars($_POST["yrsPlayed"]);
+$hTown = htmlspecialchars($_POST["hTown"]);
+$hState = htmlspecialchars($_POST["hState"]);
+$hCountry = htmlspecialchars($_POST["hCountry"]);
+$major = htmlspecialchars($_POST["major"]);
+
 
 //Database URL
 $dbUrl = getenv('DATABASE_URL');
@@ -37,7 +46,8 @@ try {
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = "INSERT INTO player (name, pNum, position, yrsplayed, hometown, homestate, homecountry, major)
-    VALUES (($_POST["name"]), ($_POST["jNum"]), ($_POST["Pos"]), ($_POST["yrsPlayed"]),($_POST["hTown"]), ($_POST["hState"]), ($_POST["hCountry"]), ($_POST["major"]))";
+    VALUES ($name, jNum, Pos, yrsPlayed, hTown, hState, hCountry, major)";
+
     // use exec() because no results are returned
     $conn->exec($sql);
     $newId = $conn->lastInsertId();
