@@ -11,22 +11,23 @@
   </header>
 <div id="innerContent">
 
+<!--Fill out the form-->
 <form>
-You are:
+You are:<br/>
 <input type="radio" name="dStatus" value="player">A Player<br/>
 <input type="radio" name="dStatus" value="Alumni">An Alumni<br/>
 Name:<br/>
-<input type="text" name="name" placeholder="ex. John Doe"><br/>
+<input type="text" name="name" placeholder="ex. John Doe"><br/><br/>
 Jersey Number:
-<input type="text" name="jNum" placeholder="ex. 17"><br/>
+<input type="text" name="jNum" placeholder="ex. 17"><br/><br/>
 Position:
-<input type="text" name="Pos" placeholder="ex. Outside Defender"><br/>
+<input type="text" name="Pos" placeholder="ex. Outside Defender"><br/><br/>
 Years Played:
-<input type="text" name="yrsPlayed" placeholder="ex. 3"><br/>
+<input type="text" name="yrsPlayed" placeholder="ex. 3"><br/><br/>
 Home Town:
-<input type="text" name="hTown" placeholder="ex. Seattle"><br/>
+<input type="text" name="hTown" placeholder="ex. Seattle"><br/><br/>
 Home State:
-<input list="states" name="hState">
+<input list="states" name="hState"><br/>
  <datalist id="states">
   <option value="AL">
   <option value="AK">
@@ -80,13 +81,15 @@ Home State:
   <option value="WY">
  </datalist> 
   Home Country:
-  <input type="text" name="hCountry" placeholder="ex. Brazil"><br/>
+  <input type="text" name="hCountry" placeholder="ex. Brazil"><br/><br/>
   Major:
-  <input type="text" name="major" placeholder="ex. Business"><br/>
+  <input type="text" name="major" placeholder="ex. Business"><br/><br/>
 
-  <input type="submit">Submit
+  <input type="submit" value="Submit">
 
 </form>
+
+
  <?php
 
 //Database URL
@@ -126,6 +129,6 @@ catch (PDOException $ex) {
 }
 
 ?>
-  
+
  </body>
 </html>
