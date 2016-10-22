@@ -31,23 +31,24 @@ $dbPassword = $dbopts["pass"];
 $dbName = ltrim($dbopts["path"],'/');
 
 try {
- $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+    $conn = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $sql = "INSERT INTO player (name, pNum, position, yrsplayed, hometown, homestate, homecountry, major)
+    VALUES (($_POST["name"]), ($_POST["jNum"]), ($_POST["Pos"]), ($_POST["yrsPlayed"]),($_POST["hTown"]), ($_POST["hState"]), ($_POST["hCountry"]), ($_POST["major"]))";
+    // use exec() because no results are returned
+    $conn->exec($sql);
+    $newId = $conn->lastInsertId();
+    echo "New record created successfully";
+    }
+catch(PDOException $e)
+    {
+    echo $sql . "<br>" . $e->getMessage();
+    }
 
-	foreach($db->query('SELECT name, pNumber, position, yrsPlayed, homeTown, homeState, homeCountry, major FROM player')as $row)
-	{
-		echo '<p>';
-		echo '<strong>' . $row['name'] . '' . $row['pNumber'] . '';
-		echo $row['position'] . '' . $row['yrsPlayed'];
-		echo $row['homeTown'] . ', ' . $row['homeState'];
-		echo $row['homeCountry'] . '' . $row['major'] . '.';
-		echo '</p>';
-	}
-}
-catch (PDOException $ex) {
- print "<p>error: $ex->getMessage() </p>\n\n";
- die();
-}
+$conn = null;
+
 
 ?>
 
