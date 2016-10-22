@@ -45,11 +45,11 @@ try {
 
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "INSERT INTO player (name, pNum, position, yrsplayed, hometown, homestate, homecountry, major)
-    VALUES ($name, $jNum, $Pos, $yrsPlayed, $hTown, $hState, $hCountry, $major)";
+    $sql = $dbUrl->exec("INSERT INTO player (name, pNum, position, yrsplayed, hometown, homestate, homecountry, major)
+    VALUES ($name, $jNum, $Pos, $yrsPlayed, $hTown, $hState, $hCountry, $major)");
 
     // use exec() because no results are returned
-    $conn->exec($dbUrl, $sql);
+    //$conn->exec($dbUrl, $sql);
     $newId = $conn->lastInsertId();
     echo "New record created successfully";
     }
