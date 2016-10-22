@@ -18,7 +18,7 @@ function loadLogIn() {
      document.getElementById("content").innerHTML = xhttp.responseText;
     }
   };
-  xhttp.open("GET", "https://morning-basin-25235.herokuapp.com/dragonsLogIn.php", true);
+  xhttp.open("GET", "https://morning-basin-25235.herokuapp.com/dragonsLogIn.html", true);
   xhttp.send();
 }
 
