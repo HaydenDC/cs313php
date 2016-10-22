@@ -16,17 +16,23 @@
 You are:<span style="color: red">*</span><br/>
 <input type="radio" name="dStatus" value="player">A Player<br/>
 <input type="radio" name="dStatus" value="Alumni">An Alumni<br/>
+
 Name:<span style="color: red">*</span><br/>
 <input type="text" name="name" placeholder="ex. John Doe"><br/><br/>
-Jersey Number:<span style="color: red">*</span>
+
+Jersey Number:<span style="color: red">*</span><br/>
 <input type="text" name="jNum" placeholder="ex. 17"><br/><br/>
-Position:<span style="color: red">*</span>
+
+Position:<span style="color: red">*</span><br/>
 <input type="text" name="Pos" placeholder="ex. Outside Defender"><br/><br/>
-Years Played:
+
+Years Played:<br/>
 <input type="text" name="yrsPlayed" placeholder="ex. 3"><br/><br/>
-Home Town:<span style="color: red">*</span>
+
+Home Town:<span style="color: red">*</span><br/>
 <input type="text" name="hTown" placeholder="ex. Seattle"><br/><br/>
-Home State:
+
+Home State:<br/>
 <input list="states" name="hState"><br/>
  <datalist id="states">
   <option value="AL">
@@ -80,9 +86,9 @@ Home State:
   <option value="WI">
   <option value="WY">
  </datalist> 
-  Home Country:
+  Home Country:<br/>
   <input type="text" name="hCountry" placeholder="ex. Brazil"><br/><br/>
-  Major:
+  Major:<br/>
   <input type="text" name="major" placeholder="ex. Business"><br/><br/>
 
   <span style="color: red">*</span>Required<br/><br/>
