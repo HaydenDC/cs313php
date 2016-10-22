@@ -13,18 +13,18 @@
 
 <!--Fill out the form-->
 <form>
-You are:<br/>
+You are:<span style="color: red">*</span><br/>
 <input type="radio" name="dStatus" value="player">A Player<br/>
 <input type="radio" name="dStatus" value="Alumni">An Alumni<br/>
-Name:<br/>
+Name:<span style="color: red">*</span><br/>
 <input type="text" name="name" placeholder="ex. John Doe"><br/><br/>
-Jersey Number:
+Jersey Number:<span style="color: red">*</span>
 <input type="text" name="jNum" placeholder="ex. 17"><br/><br/>
-Position:
+Position:<span style="color: red">*</span>
 <input type="text" name="Pos" placeholder="ex. Outside Defender"><br/><br/>
 Years Played:
 <input type="text" name="yrsPlayed" placeholder="ex. 3"><br/><br/>
-Home Town:
+Home Town:<span style="color: red">*</span>
 <input type="text" name="hTown" placeholder="ex. Seattle"><br/><br/>
 Home State:
 <input list="states" name="hState"><br/>
@@ -85,6 +85,7 @@ Home State:
   Major:
   <input type="text" name="major" placeholder="ex. Business"><br/><br/>
 
+  <span style="color: red">*</span>Required<br/><br/>
   <input type="submit" value="Submit">
 
 </form>
