@@ -12,13 +12,13 @@
 <a href="https://morning-basin-25235.herokuapp.com/dragonsHome.html">Back to home page</a>
 
  <?php
- 
+
 //Database URL
 $dbUrl = getenv('DATABASE_URL');
 
 if (empty($dbUrl)) {
  //Connect to the Database
-$dbUrl = "postgres://postgres:password@localhost:5432/dragonsdb";
+ $dbUrl = "postgres://postgres:password@localhost:5432/dragonsdb";
 }
 
 //$dbopts = parse_url($dbUrl);
@@ -53,5 +53,6 @@ $dbUrl = "postgres://postgres:password@localhost:5432/dragonsdb";
 
 
 ?>
+ </div>
  </body>
 </html>
