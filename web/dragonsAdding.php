@@ -20,9 +20,9 @@ if (empty($dbUrl)) {
  //Connect to the Database
 $dbUrl = "postgres://postgres:password@localhost:5432/dragonsdb";
 }
-/*
-$dbopts = parse_url($dbUrl);
 
+$dbopts = parse_url($dbUrl);
+/*
 
 $dbHost = $dbopts["host"]; 
 $dbPort = $dbopts["port"]; 
