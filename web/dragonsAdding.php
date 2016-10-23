@@ -14,7 +14,7 @@
  <?php
 
 //Database URL
-$dbUrl = getenv('DATABASE_URL');
+//$dbUrl = getenv('DATABASE_URL');
 
 //if (empty($dbUrl)) {
  //Connect to the Database
