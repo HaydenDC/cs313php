@@ -11,7 +11,7 @@
 <div id="innerContent">
 <a href="https://morning-basin-25235.herokuapp.com/dragonsHome.html">Back to home page</a>
 
- <?php
+ <!--<?php
 //$name = htmlspecialchars($_POST["name"]);
 //$jNum = htmlspecialchars($_POST["jNum"]);
 //$Pos = htmlspecialchars($_POST["Pos"]);
@@ -63,6 +63,6 @@
 
 
 ?>
-
+-->
  </body>
 </html>
