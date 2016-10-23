@@ -22,44 +22,45 @@ $hState = htmlspecialchars($_POST["hState"]);
 $hCountry = htmlspecialchars($_POST["hCountry"]);
 $major = htmlspecialchars($_POST["major"]);
 
+	echo $name . $jNum . $Pos . $yrsPlayed . $hTown . $hState . $hCountry . $major "all came from POST";
 
 //Database URL
-$dbUrl = getenv('DATABASE_URL');
+//$dbUrl = getenv('DATABASE_URL');
 
-if (empty($dbUrl)) {
+//if (empty($dbUrl)) {
  //Connect to the Database
- $dbUrl = "postgres://postgres:password@localhost:5432/dragonsdb";
-}
+ //$dbUrl = "postgres://postgres:password@localhost:5432/dragonsdb";
+//}
 
-$dbopts = parse_url($dbUrl);
+//$dbopts = parse_url($dbUrl);
 
 
-$dbHost = $dbopts["host"]; 
-$dbPort = $dbopts["port"]; 
-$dbUser = $dbopts["user"]; 
-$dbPassword = $dbopts["pass"];
-$dbName = ltrim($dbopts["path"],'/');
+//$dbHost = $dbopts["host"]; 
+//$dbPort = $dbopts["port"]; 
+//$dbUser = $dbopts["user"]; 
+//$dbPassword = $dbopts["pass"];
+//$dbName = ltrim($dbopts["path"],'/');
 
-try {
-    $conn = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+//try {
+    //$conn = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
     //Set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+   // $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $sql = "INSERT INTO player (name, pNum, position, yrsplayed, hometown, homestate, homecountry, major)
-    VALUES ('$name', '$jNum', '$Pos', '$yrsPlayed', '$hTown', '$hState', '$hCountry', '$major')";
+   // $sql = "INSERT INTO player (name, pNum, position, yrsplayed, hometown, homestate, homecountry, major)
+   // VALUES ('$name', '$jNum', '$Pos', '$yrsPlayed', '$hTown', '$hState', '$hCountry', '$major')";
 	
     //Execute the query
-    exec($conn, $sql);
-    $newId = $conn->lastInsertId();
-    echo "New player added";
+   // exec($conn, $sql);
+  //  $newId = $conn->lastInsertId();
+  //  echo "New player added";
     }
-catch(PDOException $e)
+//catch(PDOException $e)
     {
-    echo $sql . "<br>" . $e->getMessage();
+//    echo $sql . "<br>" . $e->getMessage();
     }
 
-$conn = null;
+//$conn = null;
 
 
 ?>
