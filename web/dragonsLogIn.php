@@ -11,6 +11,8 @@
 <div id="innerContent">
 <a href="https://morning-basin-25235.herokuapp.com/dragonsHome.html">Back to home page</a>
 
- 
+ <?php
+ 	echo "This is php";
+ ?>
  </body>
 </html>
