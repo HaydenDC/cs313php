@@ -13,16 +13,16 @@
 <a href="https://morning-basin-25235.herokuapp.com/dragonsHome.html">Back to home page</a>
 
  <?php
-$name = htmlspecialchars($_POST["name"]);
-$jNum = htmlspecialchars($_POST["jNum"]);
-$Pos = htmlspecialchars($_POST["Pos"]);
-$yrsPlayed = htmlspecialchars($_POST["yrsPlayed"]);
-$hTown = htmlspecialchars($_POST["hTown"]);
-$hState = htmlspecialchars($_POST["hState"]);
-$hCountry = htmlspecialchars($_POST["hCountry"]);
-$major = htmlspecialchars($_POST["major"]);
+//$name = htmlspecialchars($_POST["name"]);
+//$jNum = htmlspecialchars($_POST["jNum"]);
+//$Pos = htmlspecialchars($_POST["Pos"]);
+//$yrsPlayed = htmlspecialchars($_POST["yrsPlayed"]);
+//$hTown = htmlspecialchars($_POST["hTown"]);
+//$hState = htmlspecialchars($_POST["hState"]);
+//$hCountry = htmlspecialchars($_POST["hCountry"]);
+//$major = htmlspecialchars($_POST["major"]);
 
-	echo $name . $jNum . $Pos . $yrsPlayed . $hTown . $hState . $hCountry . $major "all came from POST";
+//	echo $name . $jNum . $Pos . $yrsPlayed . $hTown . $hState . $hCountry . $major "all came from POST";
 
 //Database URL
 //$dbUrl = getenv('DATABASE_URL');
