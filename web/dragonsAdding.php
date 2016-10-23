@@ -12,7 +12,7 @@
 <a href="https://morning-basin-25235.herokuapp.com/dragonsHome.html">Back to home page</a>
 
  <?php
-
+echo "I'm in PHP";
 //Database URL
 //$dbUrl = getenv('DATABASE_URL');
 
