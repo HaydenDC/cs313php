@@ -13,6 +13,45 @@
 
 <?php
 echo "I'm in PHP";
+//Database URL
+/*$dbUrl = getenv('DATABASE_URL');
+
+if (empty($dbUrl)) {
+ //Connect to the Database
+$dbUrl = "postgres://postgres:password@localhost:5432/dragonsdb";
+}
+
+$dbopts = parse_url($dbUrl);
+
+
+$dbHost = $dbopts["host"]; 
+$dbPort = $dbopts["port"]; 
+$dbUser = $dbopts["user"]; 
+$dbPassword = $dbopts["pass"];
+$dbName = ltrim($dbopts["path"],'/');
+
+try {
+    $conn = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+
+    //Set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $sql = "INSERT INTO player (name, pNum, position, yrsplayed, hometown, homestate, homecountry, major)
+    VALUES ('$name', '$jNum', '$Pos', '$yrsPlayed', '$hTown', '$hState', '$hCountry', '$major')";
+	
+   Execute the query
+    exec($conn, $sql);
+    $newId = $conn->lastInsertId();
+    echo "New player added";
+    }
+catch(PDOException $e)
+    {
+    echo $sql . "<br>" . $e->getMessage();
+    }
+
+$conn = null;
+
+*/
 
 ?>
  
