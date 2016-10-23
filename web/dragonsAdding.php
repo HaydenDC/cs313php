@@ -43,11 +43,11 @@
    // exec($conn, $sql);
   //  $newId = $conn->lastInsertId();
   //  echo "New player added";
-    }
+  //  }
 //catch(PDOException $e)
-    {
+  //  {
 //    echo $sql . "<br>" . $e->getMessage();
-    }
+  //  }
 
 //$conn = null;
 
