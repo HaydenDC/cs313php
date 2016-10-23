@@ -1,4 +1,3 @@
-<DOCTYPE! html>
 <html>
  <head>
   <title>Dragons Log In</title>
