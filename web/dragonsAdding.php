@@ -14,8 +14,8 @@
 <?php
 echo "I'm in PHP";
 //Database URL
-/*$dbUrl = getenv('DATABASE_URL');
-
+$dbUrl = getenv('DATABASE_URL');
+/*
 if (empty($dbUrl)) {
  //Connect to the Database
 $dbUrl = "postgres://postgres:password@localhost:5432/dragonsdb";
