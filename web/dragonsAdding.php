@@ -13,6 +13,26 @@
 
 <?php
 echo "I'm in PHP";
+
+//Get the data from POST
+ $name = $_POST['name'];
+ $jNum = $_POST['jNum'];
+ $Pos = $_POST['Pos'];
+ $yrsPlayed = $_POST['yrsPlayed'];
+ $hTown = $_POST['hTown'];
+ $hState = $_POST['hState'];
+ $hCountry = $_POST['hCountry'];
+ $major = $_POST['major'];
+
+ echo "name =$name\n";
+ echo "Number =$jNum\n";
+ echo "Position =$Pos\n";
+ echo "Years Played =$yrsPlayed\n";
+ echo "Home Town =$hTown";
+ echo "Home State =$hState\n";
+ echo "Home Counry =$hCountry\n";
+ echo "Major =$major\n";
+ 
 //Database URL
 $dbUrl = getenv('DATABASE_URL');
 
