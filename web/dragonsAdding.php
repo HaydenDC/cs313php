@@ -32,12 +32,13 @@ echo "I'm in PHP";
  echo "Home State =$hState\n";
  echo "Home Counry =$hCountry\n";
  echo "Major =$major\n";
- 
+
 //Database URL
 $dbUrl = getenv('DATABASE_URL');
 
 if (empty($dbUrl)) {
  //Connect to the Database
+	echo "Cannot connect to DATABASE_URL";
 $dbUrl = "postgres://postgres:password@localhost:5432/dragonsdb";
 }
 
@@ -50,13 +51,14 @@ $dbUser = $dbopts["user"];
 $dbPassword = $dbopts["pass"];
 $dbName = ltrim($dbopts["path"],'/');
 
-/*
-try {
 
+try {
+/*
  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
 
     //Set the PDO error mode to exception
-    $cdb->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 
     $sql = "INSERT INTO player (name, pNum, position, yrsplayed, hometown, homestate, homecountry, major)
     VALUES ('$name', '$jNum', '$Pos', '$yrsPlayed', '$hTown', '$hState', '$hCountry', '$major')";
