@@ -75,7 +75,7 @@ try
     $newId = $db->lastInsertId();
     echo "New player added";
     }
-*/
+
 
 echo "This is before the 'catch'";
 catch(Exception $e)
