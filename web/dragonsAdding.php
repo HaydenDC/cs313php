@@ -80,6 +80,7 @@ echo "This is before the 'catch'";
 catch(Exception $e)
     {
     echo $sql . "<br>" . $e->getMessage();
+die();
     }
 /*
 $db = null;
