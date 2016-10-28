@@ -52,11 +52,11 @@ $dbUser = $dbopts["user"];
 $dbPassword = $dbopts["pass"];
 $dbName = ltrim($dbopts["path"],'/');
 
-/*
+
 try {
 
  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
+/*
     //Set the PDO error mode to exception
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -69,6 +69,7 @@ try {
     $newId = $db->lastInsertId();
     echo "New player added";
     }
+*/
 catch(PDOException $e)
     {
     echo $sql . "<br>" . $e->getMessage();
@@ -76,7 +77,7 @@ catch(PDOException $e)
 
 $db = null;
 
-*/
+
 
 ?>
  
