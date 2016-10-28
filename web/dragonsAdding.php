@@ -71,13 +71,17 @@ try {
     echo "New player added";
     }
 */
+catch{
+  echo "Caught";
+}
+/*
 catch(PDOException $e)
     {
     echo $sql . "<br>" . $e->getMessage();
     }
 
 $db = null;
-
+*/
 
 
 ?>
