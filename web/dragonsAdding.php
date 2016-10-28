@@ -35,6 +35,7 @@ echo "I'm in PHP";
 
 //Database URL
 $dbUrl = getenv('DATABASE_URL');
+ echo "I connected to the DB";
 
 if (empty($dbUrl)) {
  //Connect to the Database
