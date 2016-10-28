@@ -60,13 +60,13 @@ echo "Making PDO";
  echo "Made the PDO";
  
 
-/*
+try
+{
     //Set the PDO error mode to exception
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 echo "Made 'setAttribute'";
-*/
-try
-{
+
+/*
     $sql = "INSERT INTO player (name, pNum, position, yrsplayed, hometown, homestate, homecountry, major)
     VALUES ('$name', '$jNum', '$Pos', '$yrsPlayed', '$hTown', '$hState', '$hCountry', '$major')";
 	
@@ -74,6 +74,7 @@ try
     exec($db, $sql);
     $newId = $db->lastInsertId();
     echo "New player added";
+*/
     }
 
 
