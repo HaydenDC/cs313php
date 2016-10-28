@@ -53,10 +53,13 @@ $dbPassword = $dbopts["pass"];
 $dbName = ltrim($dbopts["path"],'/');
 
 
-try {
-  echo "In try";
-/*
+
+  
+echo "Making PDO";
  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+ echo "Made the PDO";
+ /*
+try{
 
     //Set the PDO error mode to exception
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -71,9 +74,7 @@ try {
     echo "New player added";
     }
 */
-catch{
-  echo "Caught";
-}
+
 /*
 catch(PDOException $e)
     {
