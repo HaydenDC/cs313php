@@ -64,7 +64,7 @@ echo "Making PDO";
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 echo "Made 'setAttribute'";
 
-/*
+
     $sql = "INSERT INTO player (name, pNum, position, yrsplayed, hometown, homestate, homecountry, major)
     VALUES ('$name', '$jNum', '$Pos', '$yrsPlayed', '$hTown', '$hState', '$hCountry', '$major')";
 	
@@ -72,18 +72,18 @@ echo "Made 'setAttribute'";
     exec($db, $sql);
     $newId = $db->lastInsertId();
     echo "New player added";
-*/
+
     
 
 
 echo "This is before the 'catch'";
-/*
+
 catch(Exception $e)
     {
     echo $sql . "<br>" . $e->getMessage();
 die();
     }
-/*
+
 $db = null;
 */
 
