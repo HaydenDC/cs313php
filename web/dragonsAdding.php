@@ -72,7 +72,7 @@ echo "Made 'setAttribute'";
     exec($db, $sql);
     $newId = $db->lastInsertId();
     echo "New player added";
-
+*/
     }
 
 
