@@ -60,9 +60,11 @@ echo "Making PDO";
  echo "Made the PDO";
  
 
+/*
     //Set the PDO error mode to exception
-//    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+*/
+echo "hello world";
 /*
 
     $sql = "INSERT INTO player (name, pNum, position, yrsplayed, hometown, homestate, homecountry, major)
