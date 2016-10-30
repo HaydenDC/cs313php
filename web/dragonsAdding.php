@@ -23,6 +23,7 @@ echo "I'm in PHP";
  $hState = $_POST['hState'];
  $hCountry = $_POST['hCountry'];
  $major = $_POST['major'];
+ 
 
  echo "name =$name\n";
  echo "Number =$jNum\n";
